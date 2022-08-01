@@ -1,1 +1,3 @@
 aws --profile udacity-cfn cloudformation deploy --template-file cloudfront.yml --stack-name production-distro --parameter-overrides PipelineID="mybucket741193359166" --tags project=udapeople &
+
+aws --profile udacity-cfn cloudformation validate-template --template-body file://bucket.yml

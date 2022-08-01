@@ -7,7 +7,7 @@ orbs:
 jobs:
   create_and_deploy_front_end:
     docker:
-    - image: amazon/aws-cli
+      - image: amazon/aws-cli
     steps:
     - checkout
     - run:
